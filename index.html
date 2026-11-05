@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Madriguera de Marr</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #000000; color: #ffffff;">
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- MENÚ PRINCIPAL SIEMPRE ACCESIBLE -->
+    <header class="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#acerca" class="hover-target">ACERCA DE</a></li>
+                <li><a href="#cursos" class="hover-target">CURSOS</a></li>
+                <li><a href="#colaboradores" class="hover-target">COLABORADORES</a></li>
+                <li><a href="#unete" class="hover-target">ÚNETE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- SECCIÓN 1: INICIO -->
+        <section id="inicio" class="section-inicio">
+            <div class="glitch-bg-container" id="glitch-bg"></div>
+            <div class="content-wrapper">
+                <div class="hero-container">
+                    <h1 class="hero-title">LA MADRIGUERA<br>DE MARR</h1>
+                    <p class="hero-subtitle">El punto de encuentro para mentes electricas</p>
+                    <a href="#acerca" class="btn-primary hover-target">CONOCE MAS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: ACERCA DE LA MADRIGUERA -->
+        <section id="acerca" class="section-acerca">
+            <div class="glitch-bg-container"></div>
+            <div class="gears-bg-container">
+                <svg class="gear gear-large" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="var(--tetsukon)" d="M50 15 c-2 0-4 1.5-4 3.5 v5 c-3.5 0.7-6.8 2-9.8 3.6 l-3.5-3.5 c-1.5-1.5-3.8-1.5-5.3 0 l-5 5 c-1.5 1.5-1.5 3.8 0 5.3 l3.5 3.5 c-1.6 3-2.9 6.3-3.6 9.8 h-5 c-2 0-3.5 2-3.5 4 v7 c0 2 1.5 3.5 3.5 3.5 h5 c0.7 3.5 2 6.8 3.6 9.8 l-3.5 3.5 c-1.5 1.5-1.5 3.8 0 5.3 l5 5 c1.5 1.5 3.8 1.5 5.3 0 l3.5-3.5 c3 1.6 6.3 2.9 9.8 3.6 v5 c0 2 2 3.5 4 3.5 h7 c2 0 3.5-1.5 3.5-3.5 v-5 c3.5-0.7 6.8-2 9.8-3.6 l3.5 3.5 c1.5 1.5 3.8 1.5 5.3 0 l5-5 c1.5-1.5 1.5-3.8 0-5.3 l-3.5-3.5 c1.6-3 2.9-6.3 3.6-9.8 h5 c2 0 3.5-2 3.5-4 v-7 c0-2-1.5-3.5-3.5-3.5 h-5 c-0.7-3.5-2-6.8-3.6-9.8 l3.5-3.5 c1.5-1.5 1.5-3.8 0-5.3 l-5-5 c-1.5-1.5-3.8-1.5-5.3 0 l-3.5 3.5 c-3-1.6-6.3-2.9-9.8-3.6 v-5 c0-2-1.5-3.5-3.5-3.5 h-7 z m0 18 a17 17 0 1 1 0 34 17 17 0 1 1 0-34 z" />
+                </svg>
+                <svg class="gear gear-small" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="var(--tetsukon)" d="M50 15 c-2 0-4 1.5-4 3.5 v5 c-3.5 0.7-6.8 2-9.8 3.6 l-3.5-3.5 c-1.5-1.5-3.8-1.5-5.3 0 l-5 5 c-1.5 1.5-1.5 3.8 0 5.3 l3.5 3.5 c-1.6 3-2.9 6.3-3.6 9.8 h-5 c-2 0-3.5 2-3.5 4 v7 c0 2 1.5 3.5 3.5 3.5 h5 c0.7 3.5 2 6.8 3.6 9.8 l-3.5 3.5 c-1.5 1.5-1.5 3.8 0 5.3 l5 5 c1.5 1.5 3.8 1.5 5.3 0 l3.5-3.5 c3 1.6 6.3 2.9 9.8 3.6 v5 c0 2 2 3.5 4 3.5 h7 c2 0 3.5-1.5 3.5-3.5 v-5 c3.5-0.7 6.8-2 9.8-3.6 l3.5 3.5 c1.5 1.5 3.8 1.5 5.3 0 l5-5 c1.5-1.5 1.5-3.8 0-5.3 l-3.5-3.5 c1.6-3 2.9-6.3 3.6-9.8 h5 c2 0 3.5-2 3.5-4 v-7 c0-2-1.5-3.5-3.5-3.5 h-5 c-0.7-3.5-2-6.8-3.6-9.8 l3.5-3.5 c1.5-1.5 1.5-3.8 0-5.3 l-5-5 c-1.5-1.5-3.8-1.5-5.3 0 l-3.5 3.5 c-3-1.6-6.3-2.9-9.8-3.6 v-5 c0-2-1.5-3.5-3.5-3.5 h-7 z m0 18 a17 17 0 1 1 0 34 17 17 0 1 1 0-34 z" />
+                </svg>
+            </div>
+            <div class="content-wrapper acerca-wrapper">
+                <h2 class="acerca-title">ACERCA DE LA<br>MADRIGUERA</h2>
+                <div class="acerca-text">
+                    <p>Este es un espacio educativo y creativo dedicado a descubrir, compartir y dar visibilidad a proyectos innovadores relacionados con la electrónica, la programación, la robótica y el arte. Creemos que la curiosidad puede convertirse en grandes ideas y que aprender algo nuevo no debería depender de cuánto dinero puedes invertir.</p>
+                    <p>Por eso, buscamos acercar el conocimiento a más personas mediante contenidos gratuitos, proyectos inspiradores y propuestas que motiven a experimentar, crear y aprender a nuestro propio ritmo. Queremos que quienes no tienen acceso a cursos o talleres de paga encuentren aquí una oportunidad para descubrir nuevas habilidades y explorar sus intereses.</p>
+                    <p>También buscamos reconocer e impulsar el talento de creadores de contenido mexicanos que comparten ideas frescas, conocimientos y proyectos interesantes. Queremos darles un espacio para que sus propuestas lleguen a más personas y demostrar que en México existe una comunidad creativa con mucho que enseñar y compartir.</p>
+                    <p>Más que un espacio para aprender, somos un punto de encuentro para la creatividad, la tecnología y las ideas que merecen ser compartidas. Porque el conocimiento crece cuando se comparte y cualquier persona, sin importar sus recursos, debería tener la oportunidad de crear algo extraordinario.</p>
+                </div>
+                <div class="acerca-button-container">
+                    <a href="#cursos" class="btn-primary hover-target">APRENDIZAJE</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: CATÁLOGO DE CURSOS -->
+        <section id="cursos" class="section-cursos">
+            <div class="glitch-bg-container"></div>
+            <div class="cimagen-bg-container"></div>
+            <div class="content-wrapper cursos-wrapper">
+                <div class="cursos-content-left">
+                    <h2 class="cursos-title">CATALOGO DE<br>CURSOS</h2>
+                    <div class="cursos-card">
+                        <div class="code-icon">&lt; &gt;</div>
+                        <p class="cursos-subtitle">Recopilación de recursos gratuitos<br>de instituciones publicass y privadas</p>
+                    </div>
+                </div>
+                <div class="cursos-button-container">
+                    <a href="#catalogo-lista" class="btn-primary btn-small hover-target">ir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: LISTA DEL CATÁLOGO DE CURSOS -->
+        <section id="catalogo-lista" class="section-catalogo-lista">
+            <div class="glitch-bg-container"></div>
+            <div class="catalogo-bg-container"></div>
+            <div class="content-wrapper catalogo-wrapper">
+                <h2 class="catalogo-title">CATALOGO DE<br>CURSOS</h2>
+                <nav class="catalogo-nav">
+                    <ul class="catalogo-links">
+                        <li><a href="#robotica" class="hover-target">ROBÓTICA</a></li>
+                        <li><a href="#programacion" class="hover-target">PROGRAMACIÓN</a></li>
+                        <li><a href="#electronica" class="hover-target">ELECTRONICA</a></li>
+                        <li><a href="#inteligencia-artificial" class="hover-target">INTELIGENCIA<br>ARTIFICIAL</a></li>
+                        <li><a href="#arte" class="hover-target">ARTE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: ROBÓTICA -->
+        <section id="robotica" class="section-robotica">
+            <div class="glitch-bg-container"></div>
+            <div class="robotica-bg-container"></div>
+            <div class="content-wrapper robotica-wrapper">
+                <div class="robotica-main-content">
+                    <h2 class="category-title">ROBOTICA</h2>
+                    <div class="course-card">
+                        <div class="course-logo">
+                            <img src="pilares.png" alt="Logo Pilares">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">ROBÓTICA APLICADA</h3>
+                            <p class="course-subtitle">POR PILARES MX (PUBLICO EN GENERAL)</p>
+                            <a href="https://pilares.cdmx.gob.mx/curso/14/robotica-aplicada" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="robotica-footer">
+                    <p>Estamos trabajando para traer mas recursos para ti.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: PROGRAMACIÓN -->
+        <section id="programacion" class="section-programacion">
+            <div class="glitch-bg-container"></div>
+            <div class="programacion-bg-container"></div>
+            <div class="content-wrapper programacion-wrapper">
+                <h2 class="category-title">PROGRAMACIÓN</h2>
+                <div class="programacion-list">
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="logotc.png" alt="Tecnolochicas">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">CRACIÓN DE VIDEO JUEGOS, MI PRIMER<br>CHATBOT</h3>
+                            <p class="course-subtitle">POR TECNOLOCHICAS (PARA NIÑAS Y ADOLESCENTES)</p>
+                            <a href="https://tecnolochicas.mx/#cursos" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="logoescuelacodigomx.png" alt="Escuela Pública de Código">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">CATALOGO DE CURSOS DE<br>PROGRAMACIÓN</h3>
+                            <p class="course-subtitle">POR LA ESCUELA PUBLICA DE CODIGO (PARA PUBLICO EN GENERAL)</p>
+                            <a href="https://www.epc.gob.mx/formacion/publico-general/" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="logocapacitate.png" alt="Capacítate para el empleo">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">CATALOGO DE CURSOS DE<br>PROGRAMACIÓN</h3>
+                            <p class="course-subtitle">POR CAPACITATE PARA EL EMPLEO (PUBLICO EN GENERAL)</p>
+                            <a href="https://capacitateparaelempleo.org/search?search=programacion" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: ELECTRÓNICA -->
+        <section id="electronica" class="section-electronica">
+            <div class="glitch-bg-container"></div>
+            <div class="electronica-bg-container"></div>
+            <div class="content-wrapper programacion-wrapper">
+                <h2 class="category-title" style="text-transform: none;">Electronica</h2>
+                <div class="programacion-list">
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="logotc.png" alt="Tecnolochicas">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">ELECTRO LAB</h3>
+                            <p class="course-subtitle">POR TECNOLOCHICAS (PARA NIÑAS Y ADOLESCENTES)</p>
+                            <a href="https://tecnolochicas.mx/#cursos" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="logocapacitate.png" alt="Capacítate para el empleo">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">CATALOGO DE CURSOS DE<br>ELECTRTONICA</h3>
+                            <p class="course-subtitle">POR CAPACITATE PARA EL EMPLEO (PUBLICO EN GENERAL)</p>
+                            <a href="https://capacitateparaelempleo.org/search?search=electronica" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 8: INTELIGENCIA ARTIFICIAL (IA) -->
+        <section id="inteligencia-artificial" class="section-ia">
+            <div class="glitch-bg-container"></div>
+            <div class="ia-bg-container"></div>
+            <div class="content-wrapper programacion-wrapper">
+                <h2 class="category-title" style="text-transform: none;">IA</h2>
+                <div class="programacion-list">
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="centropformacion_ia.jpg" alt="Centro Público de Formación en IA">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">CATALOGO DE CURSOS EN IA</h3>
+                            <p class="course-subtitle">POR CENTRO PUBLICO DE FORMACIÓN EN IA<br>(PUBLICO EN GENERAL)</p>
+                            <a href="https://www.mexia.gob.mx/oferta-educativa/" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="logocapacitate.png" alt="Capacítate para el empleo">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">FUNDAMENTOS DE IA</h3>
+                            <p class="course-subtitle">POR CAPACITATE PARA EL EMPLEO (PUBLICO EN GENERAL)</p>
+                            <a href="https://capacitateparaelempleo.org/cursos/view/100212" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="sabereslogo.jpeg" alt="Saberes MX">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">CATALOGO CURSOS EN IA</h3>
+                            <p class="course-subtitle">POR SABERES.MX (PUBLICO GENERAL)</p>
+                            <a href="https://saberes.gob.mx/cms/index.php/cfia" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 9: ARTE -->
+        <section id="arte" class="section-arte">
+            <div class="glitch-bg-container"></div>
+            <div class="arte-bg-container"></div>
+            <div class="content-wrapper programacion-wrapper">
+                <h2 class="category-title">ARTE</h2>
+                <div class="programacion-list">
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="nescuelamex.jpeg" alt="Nueva Escuela Mexicana">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">EL SONIDO</h3>
+                            <p class="course-subtitle">POR LA NUEVA ESCUELA MEXICANA ONLINE (NIÑAS, NIÑOS, JOVENES Y DOCENTES)</p>
+                            <a href="https://nemd.aprende.gob.mx/contenido/coleccion/11765/" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="aprende.mx.jpeg" alt="Aprende MX">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">ENSEÑANZA MUSICA EN EL<br>CONTEXTO MEXICANO</h3>
+                            <p class="course-subtitle">APRENDE MX (PUBLICO EN GENERAL)</p>
+                            <a href="https://cursos.aprende.gob.mx/courses/course-v1:aprendemx+EMEE26025X+2026_02/about" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="programacion-logo">
+                            <img src="labs.png" alt="DIO Centro Multimedia">
+                        </div>
+                        <div class="course-info">
+                            <h3 class="course-title">BIBILIOTECA DEL CENTRO<br>MULTIMEDIA</h3>
+                            <p class="course-subtitle">LABORATORIO DE EXPERIMENTACIÓN SONORA (PROYECTO ACTUALMENTE NO DISPONIBLE PERO CON BIBLIOTECA CON ALGUNOS LIBROS DESCARGABLES)</p>
+                            <a href="https://cmm.cenart.gob.mx/bibliotecavirtual/" class="btn-registro hover-target">REGISTRO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 10: COLABORADORES -->
+        <section id="colaboradores" class="section-colaboradores">
+            <div class="glitch-bg-container"></div>
+            <div class="colabs-bg-left"></div>
+            <div class="colabs-bg-right"></div>
+            <div class="content-wrapper colaboradores-wrapper">
+                <div class="colabs-text-content">
+                    <h2 class="colabs-title">COLABORADORES</h2>
+                    <p class="colabs-subtitle">
+                        Creadores de contenido mexicanos<br>
+                        que impulsan la creatividad y el arte<br>
+                        atravez de la tecnología.
+                    </p>
+                    <div class="colabs-btn-container" style="margin-top: 2.5rem;">
+                        <a href="#perfiles-colaboradores" class="btn-primary hover-target">CONOCELOS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 11: COLABORADORES Y SUS PROYECTOS -->
+        <section id="perfiles-colaboradores" class="section-perfiles">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper perfiles-wrapper">
+                <div class="perfiles-header">
+                    <h2 class="perfiles-title">COLABORADORES<br>Y SUS PROYECTOS</h2>
+                    <p class="perfiles-subtitle">
+                        Conoce las biografias de mentes brillantes, que comparten información<br>
+                        conocimiento atraves de sus redes sociales
+                    </p>
+                </div>
+
+                <div class="perfiles-grid">
+                    <!-- Perfil 1: Marr -->
+                    <div class="perfil-card">
+                        <div class="perfil-flip-container">
+                            <div class="perfil-flip-inner">
+                                <div class="perfil-flip-front">
+                                    <img src="marr.png" alt="Marr">
+                                </div>
+                                <div class="perfil-flip-back">
+                                    <a href="https://github.com/rivrzmar" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="perfil-name">Marr</h3>
+                        <a href="#bio-marr" class="btn-primary btn-ver-mas hover-target">BIO</a>
+                    </div>
+
+                    <!-- Perfil 2: Monos Ruidosos -->
+                    <div class="perfil-card">
+                        <div class="perfil-flip-container">
+                            <div class="perfil-flip-inner">
+                                <div class="perfil-flip-front">
+                                    <img src="monosruidosos.jpeg" alt="Monos Ruidosos">
+                                </div>
+                                <div class="perfil-flip-back">
+                                    <a href="https://www.instagram.com/monos_ruidosos?srtk=MnNiajc2eno2ZzRo" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@marianaledesmajalpa" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="perfil-name">Monos Ruidosos</h3>
+                        <a href="#bio-monos" class="btn-primary btn-ver-mas hover-target">BIO</a>
+                    </div>
+
+                    <!-- Perfil 3: Fabiola Hinojosa -->
+                    <div class="perfil-card">
+                        <div class="perfil-flip-container">
+                            <div class="perfil-flip-inner">
+                                <div class="perfil-flip-front">
+                                    <img src="fabiola.jpeg" alt="Fabiola Hinojosa">
+                                </div>
+                                <div class="perfil-flip-back">
+                                    <a href="https://www.instagram.com/fabhinojossa?xtok=N3dvMGU1bHl1cWQ4" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@shesleavinghome_" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="perfil-name">Fabiola Hinojosa</h3>
+                        <a href="#bio-fabiola" class="btn-primary btn-ver-mas hover-target">BIO</a>
+                    </div>
+
+                    <!-- Perfil 4: Ominoussoundx -->
+                    <div class="perfil-card">
+                        <div class="perfil-flip-container">
+                            <div class="perfil-flip-inner">
+                                <div class="perfil-flip-front">
+                                    <img src="ominoussound.jpeg" alt="Ominoussoundx">
+                                </div>
+                                <div class="perfil-flip-back">
+                                    <a href="https://www.instagram.com/ominoussound" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@ominoussound?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon hover-target">
+                                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="perfil-name">Ominoussoundx</h3>
+                        <a href="#bio-ominous" class="btn-primary btn-ver-mas hover-target">BIO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 12: BIO MARR -->
+        <section id="bio-marr" class="section-bio">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper bio-wrapper">
+                <div class="bio-grid">
+                    <div class="bio-text-col">
+                        <h2 class="bio-title">MARR</h2>
+                        <div class="bio-paragraphs">
+                            <p>Su curiosidad por comprender el funcionamiento del mundo que lo rodea lo llevó a involucrarse en el ámbito STEM, donde encontró una forma de transformar preguntas en ideas y convertirlas en proyectos. Actualmente, estudia Desarrollo de Software Multiplataforma y Robótica, con especial interés en el desarrollo Front-End y la creación de experiencias digitales.</p>
+                            <p>Además de desempeñarse como mentor en tecnología, busca acercar el conocimiento a más personas mediante la difusión de recursos educativos gratuitos y la promoción de proyectos de personas creativas que exploran áreas como la electrónica, la música, la robótica y otras disciplinas tecnológicas.</p>
+                        </div>
+                        <div class="bio-social-links">
+                            <a href="https://github.com/rivrzmar" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <span>https://github.com/rivrzmar</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bio-img-col">
+                        <img src="marr.png" alt="Marr">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 13: BIO MONOS RUIDOSOS -->
+        <section id="bio-monos" class="section-bio">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper bio-wrapper">
+                <div class="bio-grid">
+                    <div class="bio-text-col">
+                        <h2 class="bio-title">MONOS RUIDOSOS</h2>
+                        <div class="bio-paragraphs">
+                            <p>Mariana Ledesma (Salamanca, Guanajuato, 1996) es artista cuya práctica explora los fenómenos postindustriales, el paisaje sonoro y las posibilidades expresivas de la electrónica. Influida por su historia familiar ligada a la industria petrolera, su obra reflexiona sobre territorio, energía y transformación de la materia. Ha expuesto en México, Colombia, Estados Unidos y España, en espacios como el Museo Universitario del Chopo, Casa del Lago, Museo de Arte Carrillo Gil y el Centro Cultural de España en México. Actualmente investiga las narrativas técnicas del circuito y el ruido como resistencia, combinando circuit bending, escucha expandida y la creación de sintetizadores y filtros que generan nuevas texturas sonoras.</p>
+                        </div>
+                        <div class="bio-social-links">
+                            <a href="https://www.instagram.com/monos_ruidosos?srtk=MnNiajc2eno2ZzRo" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                <span>@monosruidosos</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@marianaledesmajalpa" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
+                                <span>@marianaledesmajalpa</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bio-img-col">
+                        <img src="monosruidosos.jpeg" alt="Monos Ruidosos">
+                    </div>
+                </div>
+                <div class="tiktok-gallery">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@marianaledesmajalpa" data-unique-id="marianaledesmajalpa" data-embed-type="creator" data-theme="dark" style="max-width: 780px; min-width: 288px;">
+                        <section> <a target="_blank" href="https://www.tiktok.com/@marianaledesmajalpa?refer=creator_embed">@marianaledesmajalpa</a> </section> 
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 14: BIO FABIOLA HINOJOSA -->
+        <section id="bio-fabiola" class="section-bio">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper bio-wrapper">
+                <div class="bio-grid">
+                    <div class="bio-text-col">
+                        <h2 class="bio-title">FABIOLA HINOJOSA</h2>
+                        <div class="bio-paragraphs">
+                            <p>Fabiola Hinojosa es periodista mexicana cuya trayectoria se distingue por su interés en la música y el periodismo cultural. Formada en la Facultad de Ciencias Políticas y Sociales de la Universidad Nacional Autónoma de México (UNAM), ha colaborado con medios como El Universal, Univision, Televisa, Yahoo México, monitorLATINO y RadioNotas. Su trabajo se caracteriza por explorar el vínculo entre la música, el entretenimiento y la cultura contemporánea, desde una perspectiva periodística que conecta con diferentes públicos. Además de su labor como reportera, desarrolla una faceta vinculada con la música como DJ, ampliando su participación en la escena musical. Su perfil reúne comunicación y expresión artística, dos ámbitos desde los cuales se aproxima a la cultura musical.</p>
+                        </div>
+                        <div class="bio-social-links">
+                            <a href="https://www.instagram.com/fabhinojossa?xtok=N3dvMGU1bHl1cWQ4" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                <span>@fabhinojosa</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@shesleavinghome_" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
+                                <span>@shesleavinghome_</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bio-img-col">
+                        <img src="fabiola.jpeg" alt="Fabiola Hinojosa">
+                    </div>
+                </div>
+                <div class="tiktok-gallery">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@shesleavinghome_" data-unique-id="shesleavinghome_" data-embed-type="creator" data-theme="dark" style="max-width: 780px; min-width: 288px;">
+                        <section> <a target="_blank" href="https://www.tiktok.com/@shesleavinghome_?refer=creator_embed">@shesleavinghome_</a> </section> 
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 15: BIO OMINOUSSOUND -->
+        <section id="bio-ominous" class="section-bio">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper bio-wrapper">
+                <div class="bio-grid">
+                    <div class="bio-text-col">
+                        <h2 class="bio-title">OMINOUSSOUND</h2>
+                        <div class="bio-paragraphs">
+                            <p>Carlos Rodríguez, tatuador originario de San Nicolás de los Garza, Nuevo León, es un artista cuya práctica se extiende hacia la experimentación sonora y la electrónica. Su acercamiento al noise lo llevó a explorar las posibilidades expresivas del sonido, abriendo un camino creativo que conecta el arte, la tecnología y la experimentación musical. Actualmente, desarrolla un proyecto colaborativo junto a doce músicos de distintas partes del mundo, construyendo una propuesta que trasciende fronteras geográficas a través de la exploración sonora. Además de su trabajo artístico, comparte contenido educativo sobre electrónica, acercando conocimientos y herramientas a quienes desean descubrir nuevas formas de crear, experimentar y relacionarse con la tecnología.</p>
+                        </div>
+                        <div class="bio-social-links">
+                            <a href="https://www.instagram.com/ominoussound" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                <span>@ominoussound</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@ominoussound?is_from_webapp=1&sender_device=pc" target="_blank" class="hover-target">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
+                                <span>@ominoussound</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bio-img-col">
+                        <img src="ominoussound.jpeg" alt="Ominoussoundx">
+                    </div>
+                </div>
+                <div class="tiktok-gallery">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ominoussound" data-unique-id="ominoussound" data-embed-type="creator" data-theme="dark" style="max-width: 780px; min-width: 288px;">
+                        <section> <a target="_blank" href="https://www.tiktok.com/@ominoussound?refer=creator_embed">@ominoussound</a> </section> 
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 16: ÚNETE A LA MADRIGUERA -->
+        <section id="unete" class="section-unete">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper unete-wrapper">
+                <div class="unete-header">
+                    <h2 class="unete-title">UNETÉ A LA<br>MADRIGUERA</h2>
+                </div>
+                <div class="unete-grid">
+                    <!-- Mitad Izquierda: Colaborador -->
+                    <div class="unete-card">
+                        <h3 class="unete-subtitle">COLABORADOR</h3>
+                        <p class="unete-text">Si tienes un proyecto relacionado con algunos de nuestros segmentos o quieres ofrecer un taller gratuito para la comunidad.</p>
+                        <a href="#form-colaborador" class="btn-unete hover-target">Ir</a>
+                    </div>
+                    <!-- Mitad Derecha: Marca -->
+                    <div class="unete-card">
+                        <h3 class="unete-subtitle">MARCA</h3>
+                        <p class="unete-text">Si eres una marca consolidada y deseas contarnos tu propuesta para ayudar al crecimiento de la comunidad.</p>
+                        <a href="#form-marca" class="btn-unete hover-target">Ir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN 17: FORMULARIO COLABORADOR -->
+        <section id="form-colaborador" class="section-formulario">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper form-wrapper">
+                <div class="form-grid">
+                    <div class="form-banner">
+                        <h2 class="form-title">CUENTANOS<br>SOBRE TI</h2>
+                    </div>
+                    <div class="form-content">
+                        <form class="custom-form">
+                            <input type="text" placeholder="Nombre:" required class="hover-target">
+                            <textarea placeholder="Cuentanos tu proyecto:" rows="3" required class="hover-target"></textarea>
+                            <input type="url" placeholder="Enlaces:" class="hover-target">
+                            <input type="email" placeholder="Correo:" required class="hover-target">
+                            <input type="tel" placeholder="Numero de telefono:" required class="hover-target">
+                            <button type="submit" class="btn-primary hover-target">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 18: FORMULARIO MARCA -->
+        <section id="form-marca" class="section-formulario">
+            <div class="glitch-bg-container"></div>
+            <div class="content-wrapper form-wrapper">
+                <div class="form-grid">
+                    <div class="form-content">
+                        <form class="custom-form">
+                            <input type="text" placeholder="Nombre de la empresa o marca:" required class="hover-target">
+                            <textarea placeholder="Propuesta de colaboración:" rows="3" required class="hover-target"></textarea>
+                            <input type="url" placeholder="Sitio Web:" class="hover-target">
+                            <input type="email" placeholder="Correo de contacto:" required class="hover-target">
+                            <input type="tel" placeholder="Numero de telefono:" required class="hover-target">
+                            <button type="submit" class="btn-primary hover-target">ENVIAR</button>
+                        </form>
+                    </div>
+                    <div class="form-banner">
+                        <h2 class="form-title">CUENTANOS<br>SOBRE<br>USTEDES</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script de TikTok unificado al final para cargar los tres videos de forma óptima -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    
+    <!-- Script Custom -->
+    <script src="script.js"></script>
+</body>
+</html>
