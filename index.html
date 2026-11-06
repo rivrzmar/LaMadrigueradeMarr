@@ -9,29 +9,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <!-- API de SoundCloud Widget -->
+    <script src="https://w.soundcloud.com/player/api.js"></script>
 </head>
-<body style="background-color: #000000; color: #ffffff;">
+<body>
     <!-- Cursor Personalizado -->
     <div class="custom-cursor" id="custom-cursor"></div>
 
-    <!-- MENÚ PRINCIPAL SIEMPRE ACCESIBLE -->
-    <header class="navbar">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#acerca" class="hover-target">ACERCA DE</a></li>
+    <!-- Menú de Navegación Flotante -->
+    <div id="floating-nav" class="floating-nav">
+        <nav class="floating-menu-content">
+            <!-- Botón Hamburguesa -->
+            <button class="hamburger hover-target" id="hamburger-float" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links-float">
+                <li><a href="#inicio" class="hover-target">INICIO</a></li>
+                <li><a href="#acerca" class="hover-target">ACERCA</a></li>
                 <li><a href="#cursos" class="hover-target">CURSOS</a></li>
                 <li><a href="#colaboradores" class="hover-target">COLABORADORES</a></li>
                 <li><a href="#unete" class="hover-target">ÚNETE</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <main id="main-content">
         <!-- SECCIÓN 1: INICIO -->
         <section id="inicio" class="section-inicio">
             <div class="glitch-bg-container" id="glitch-bg"></div>
             <div class="content-wrapper">
+                <header class="navbar">
+                    <nav class="main-menu-content">
+                        <!-- Botón Hamburguesa -->
+                        <button class="hamburger hover-target" id="hamburger-main" aria-label="Abrir menú">
+                            <span></span><span></span><span></span>
+                        </button>
+                        <ul class="nav-links" id="nav-links-main">
+                            <li><a href="#acerca" class="hover-target">ACERCA DE</a></li>
+                            <li><a href="#cursos" class="hover-target">CURSOS</a></li>
+                            <li><a href="#colaboradores" class="hover-target">COLABORADORES</a></li>
+                            <li><a href="#unete" class="hover-target">ÚNETE</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
                 <div class="hero-container">
                     <h1 class="hero-title">LA MADRIGUERA<br>DE MARR</h1>
                     <p class="hero-subtitle">El punto de encuentro para mentes electricas</p>
@@ -72,9 +94,9 @@
             <div class="content-wrapper cursos-wrapper">
                 <div class="cursos-content-left">
                     <h2 class="cursos-title">CATALOGO DE<br>CURSOS</h2>
-                    <div class="cursos-card">
+                    <div class="cursos-card-intro">
                         <div class="code-icon">&lt; &gt;</div>
-                        <p class="cursos-subtitle">Recopilación de recursos gratuitos<br>de instituciones publicass y privadas</p>
+                        <p class="cursos-subtitle">Recopilación de recursos gratuitos<br>de instituciones publicas y privadas</p>
                     </div>
                 </div>
                 <div class="cursos-button-container">
@@ -115,7 +137,7 @@
                         <div class="course-info">
                             <h3 class="course-title">ROBÓTICA APLICADA</h3>
                             <p class="course-subtitle">POR PILARES MX (PUBLICO EN GENERAL)</p>
-                            <a href="https://pilares.cdmx.gob.mx/curso/14/robotica-aplicada" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://pilares.cdmx.gob.mx/curso/14/robotica-aplicada" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                 </div>
@@ -137,9 +159,9 @@
                             <img src="logotc.png" alt="Tecnolochicas">
                         </div>
                         <div class="course-info">
-                            <h3 class="course-title">CRACIÓN DE VIDEO JUEGOS, MI PRIMER<br>CHATBOT</h3>
+                            <h3 class="course-title">CREACIÓN DE VIDEO JUEGOS, MI PRIMER<br>CHATBOT</h3>
                             <p class="course-subtitle">POR TECNOLOCHICAS (PARA NIÑAS Y ADOLESCENTES)</p>
-                            <a href="https://tecnolochicas.mx/#cursos" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://tecnolochicas.mx/#cursos" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -149,7 +171,7 @@
                         <div class="course-info">
                             <h3 class="course-title">CATALOGO DE CURSOS DE<br>PROGRAMACIÓN</h3>
                             <p class="course-subtitle">POR LA ESCUELA PUBLICA DE CODIGO (PARA PUBLICO EN GENERAL)</p>
-                            <a href="https://www.epc.gob.mx/formacion/publico-general/" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://www.epc.gob.mx/formacion/publico-general/" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -159,7 +181,7 @@
                         <div class="course-info">
                             <h3 class="course-title">CATALOGO DE CURSOS DE<br>PROGRAMACIÓN</h3>
                             <p class="course-subtitle">POR CAPACITATE PARA EL EMPLEO (PUBLICO EN GENERAL)</p>
-                            <a href="https://capacitateparaelempleo.org/search?search=programacion" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://capacitateparaelempleo.org/search?search=programacion" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +202,7 @@
                         <div class="course-info">
                             <h3 class="course-title">ELECTRO LAB</h3>
                             <p class="course-subtitle">POR TECNOLOCHICAS (PARA NIÑAS Y ADOLESCENTES)</p>
-                            <a href="https://tecnolochicas.mx/#cursos" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://tecnolochicas.mx/#cursos" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -190,7 +212,7 @@
                         <div class="course-info">
                             <h3 class="course-title">CATALOGO DE CURSOS DE<br>ELECTRTONICA</h3>
                             <p class="course-subtitle">POR CAPACITATE PARA EL EMPLEO (PUBLICO EN GENERAL)</p>
-                            <a href="https://capacitateparaelempleo.org/search?search=electronica" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://capacitateparaelempleo.org/search?search=electronica" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +233,7 @@
                         <div class="course-info">
                             <h3 class="course-title">CATALOGO DE CURSOS EN IA</h3>
                             <p class="course-subtitle">POR CENTRO PUBLICO DE FORMACIÓN EN IA<br>(PUBLICO EN GENERAL)</p>
-                            <a href="https://www.mexia.gob.mx/oferta-educativa/" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://www.mexia.gob.mx/oferta-educativa/" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -221,7 +243,7 @@
                         <div class="course-info">
                             <h3 class="course-title">FUNDAMENTOS DE IA</h3>
                             <p class="course-subtitle">POR CAPACITATE PARA EL EMPLEO (PUBLICO EN GENERAL)</p>
-                            <a href="https://capacitateparaelempleo.org/cursos/view/100212" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://capacitateparaelempleo.org/cursos/view/100212" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -231,7 +253,7 @@
                         <div class="course-info">
                             <h3 class="course-title">CATALOGO CURSOS EN IA</h3>
                             <p class="course-subtitle">POR SABERES.MX (PUBLICO GENERAL)</p>
-                            <a href="https://saberes.gob.mx/cms/index.php/cfia" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://saberes.gob.mx/cms/index.php/cfia" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                 </div>
@@ -252,7 +274,7 @@
                         <div class="course-info">
                             <h3 class="course-title">EL SONIDO</h3>
                             <p class="course-subtitle">POR LA NUEVA ESCUELA MEXICANA ONLINE (NIÑAS, NIÑOS, JOVENES Y DOCENTES)</p>
-                            <a href="https://nemd.aprende.gob.mx/contenido/coleccion/11765/" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://nemd.aprende.gob.mx/contenido/coleccion/11765/" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -262,7 +284,7 @@
                         <div class="course-info">
                             <h3 class="course-title">ENSEÑANZA MUSICA EN EL<br>CONTEXTO MEXICANO</h3>
                             <p class="course-subtitle">APRENDE MX (PUBLICO EN GENERAL)</p>
-                            <a href="https://cursos.aprende.gob.mx/courses/course-v1:aprendemx+EMEE26025X+2026_02/about" class="btn-registro hover-target">REGISTRO</a>
+                            <a href="https://cursos.aprende.gob.mx/courses/course-v1:aprendemx+EMEE26025X+2026_02/about" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                     <div class="course-card">
@@ -271,8 +293,8 @@
                         </div>
                         <div class="course-info">
                             <h3 class="course-title">BIBILIOTECA DEL CENTRO<br>MULTIMEDIA</h3>
-                            <p class="course-subtitle">LABORATORIO DE EXPERIMENTACIÓN SONORA (PROYECTO ACTUALMENTE NO DISPONIBLE PERO CON BIBLIOTECA CON ALGUNOS LIBROS DESCARGABLES)</p>
-                            <a href="https://cmm.cenart.gob.mx/bibliotecavirtual/" class="btn-registro hover-target">REGISTRO</a>
+                            <p class="course-subtitle">LABORATORIO DE EXPERIMENTACIÓN SONORA</p>
+                            <a href="https://cmm.cenart.gob.mx/bibliotecavirtual/" target="_blank" rel="noopener noreferrer" class="btn-registro hover-target">REGISTRO</a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +321,7 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 11: COLABORADORES Y SUS PROYECTOS -->
+        <!-- SECCIÓN 11: PERFILES -->
         <section id="perfiles-colaboradores" class="section-perfiles">
             <div class="glitch-bg-container"></div>
             <div class="content-wrapper perfiles-wrapper">
@@ -314,13 +336,11 @@
                 <div class="perfiles-grid">
                     <!-- Perfil 1: Marr -->
                     <div class="perfil-card">
-                        <div class="perfil-flip-container">
+                        <div class="perfil-flip-container hover-target">
                             <div class="perfil-flip-inner">
-                                <div class="perfil-flip-front">
-                                    <img src="marr.png" alt="Marr">
-                                </div>
+                                <div class="perfil-flip-front"><img src="marr.png" alt="Marr"></div>
                                 <div class="perfil-flip-back">
-                                    <a href="https://github.com/rivrzmar" target="_blank" class="social-icon hover-target">
+                                    <a href="https://github.com/rivrzmar" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                                     </a>
                                 </div>
@@ -329,19 +349,17 @@
                         <h3 class="perfil-name">Marr</h3>
                         <a href="#bio-marr" class="btn-primary btn-ver-mas hover-target">BIO</a>
                     </div>
-
+                    
                     <!-- Perfil 2: Monos Ruidosos -->
                     <div class="perfil-card">
-                        <div class="perfil-flip-container">
+                        <div class="perfil-flip-container hover-target">
                             <div class="perfil-flip-inner">
-                                <div class="perfil-flip-front">
-                                    <img src="monosruidosos.jpeg" alt="Monos Ruidosos">
-                                </div>
+                                <div class="perfil-flip-front"><img src="monosruidosos.jpeg" alt="Monos Ruidosos"></div>
                                 <div class="perfil-flip-back">
-                                    <a href="https://www.instagram.com/monos_ruidosos?srtk=MnNiajc2eno2ZzRo" target="_blank" class="social-icon hover-target">
+                                    <a href="https://www.instagram.com/monos_ruidosos" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                                     </a>
-                                    <a href="https://www.tiktok.com/@marianaledesmajalpa" target="_blank" class="social-icon hover-target">
+                                    <a href="https://www.tiktok.com/@marianaledesmajalpa" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
                                     </a>
                                 </div>
@@ -350,19 +368,17 @@
                         <h3 class="perfil-name">Monos Ruidosos</h3>
                         <a href="#bio-monos" class="btn-primary btn-ver-mas hover-target">BIO</a>
                     </div>
-
+                    
                     <!-- Perfil 3: Fabiola Hinojosa -->
                     <div class="perfil-card">
-                        <div class="perfil-flip-container">
+                        <div class="perfil-flip-container hover-target">
                             <div class="perfil-flip-inner">
-                                <div class="perfil-flip-front">
-                                    <img src="fabiola.jpeg" alt="Fabiola Hinojosa">
-                                </div>
+                                <div class="perfil-flip-front"><img src="fabiola.jpeg" alt="Fabiola Hinojosa"></div>
                                 <div class="perfil-flip-back">
-                                    <a href="https://www.instagram.com/fabhinojossa?xtok=N3dvMGU1bHl1cWQ4" target="_blank" class="social-icon hover-target">
+                                    <a href="https://www.instagram.com/fabhinojossa" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                                     </a>
-                                    <a href="https://www.tiktok.com/@shesleavinghome_" target="_blank" class="social-icon hover-target">
+                                    <a href="https://www.tiktok.com/@shesleavinghome_" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
                                     </a>
                                 </div>
@@ -371,19 +387,17 @@
                         <h3 class="perfil-name">Fabiola Hinojosa</h3>
                         <a href="#bio-fabiola" class="btn-primary btn-ver-mas hover-target">BIO</a>
                     </div>
-
+                    
                     <!-- Perfil 4: Ominoussoundx -->
                     <div class="perfil-card">
-                        <div class="perfil-flip-container">
+                        <div class="perfil-flip-container hover-target">
                             <div class="perfil-flip-inner">
-                                <div class="perfil-flip-front">
-                                    <img src="ominoussound.jpeg" alt="Ominoussoundx">
-                                </div>
+                                <div class="perfil-flip-front"><img src="ominoussound.jpeg" alt="Ominoussoundx"></div>
                                 <div class="perfil-flip-back">
-                                    <a href="https://www.instagram.com/ominoussound" target="_blank" class="social-icon hover-target">
+                                    <a href="https://www.instagram.com/ominoussound" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                                     </a>
-                                    <a href="https://www.tiktok.com/@ominoussound?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon hover-target">
+                                    <a href="https://www.tiktok.com/@ominoussound?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-icon hover-target">
                                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
                                     </a>
                                 </div>
@@ -408,7 +422,7 @@
                             <p>Además de desempeñarse como mentor en tecnología, busca acercar el conocimiento a más personas mediante la difusión de recursos educativos gratuitos y la promoción de proyectos de personas creativas que exploran áreas como la electrónica, la música, la robótica y otras disciplinas tecnológicas.</p>
                         </div>
                         <div class="bio-social-links">
-                            <a href="https://github.com/rivrzmar" target="_blank" class="hover-target">
+                            <a href="https://github.com/rivrzmar" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                                 <span>https://github.com/rivrzmar</span>
                             </a>
@@ -432,11 +446,11 @@
                             <p>Mariana Ledesma (Salamanca, Guanajuato, 1996) es artista cuya práctica explora los fenómenos postindustriales, el paisaje sonoro y las posibilidades expresivas de la electrónica. Influida por su historia familiar ligada a la industria petrolera, su obra reflexiona sobre territorio, energía y transformación de la materia. Ha expuesto en México, Colombia, Estados Unidos y España, en espacios como el Museo Universitario del Chopo, Casa del Lago, Museo de Arte Carrillo Gil y el Centro Cultural de España en México. Actualmente investiga las narrativas técnicas del circuito y el ruido como resistencia, combinando circuit bending, escucha expandida y la creación de sintetizadores y filtros que generan nuevas texturas sonoras.</p>
                         </div>
                         <div class="bio-social-links">
-                            <a href="https://www.instagram.com/monos_ruidosos?srtk=MnNiajc2eno2ZzRo" target="_blank" class="hover-target">
+                            <a href="https://www.instagram.com/monos_ruidosos?srtk=MnNiajc2eno2ZzRo" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                                 <span>@monosruidosos</span>
                             </a>
-                            <a href="https://www.tiktok.com/@marianaledesmajalpa" target="_blank" class="hover-target">
+                            <a href="https://www.tiktok.com/@marianaledesmajalpa" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
                                 <span>@marianaledesmajalpa</span>
                             </a>
@@ -447,9 +461,7 @@
                     </div>
                 </div>
                 <div class="tiktok-gallery">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@marianaledesmajalpa" data-unique-id="marianaledesmajalpa" data-embed-type="creator" data-theme="dark" style="max-width: 780px; min-width: 288px;">
-                        <section> <a target="_blank" href="https://www.tiktok.com/@marianaledesmajalpa?refer=creator_embed">@marianaledesmajalpa</a> </section> 
-                    </blockquote>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@marianaledesmajalpa" data-unique-id="marianaledesmajalpa" data-embed-type="creator" style="max-width: 780px; min-width: 288px;"><section></section></blockquote>
                 </div>
             </div>
         </section>
@@ -465,11 +477,11 @@
                             <p>Fabiola Hinojosa es periodista mexicana cuya trayectoria se distingue por su interés en la música y el periodismo cultural. Formada en la Facultad de Ciencias Políticas y Sociales de la Universidad Nacional Autónoma de México (UNAM), ha colaborado con medios como El Universal, Univision, Televisa, Yahoo México, monitorLATINO y RadioNotas. Su trabajo se caracteriza por explorar el vínculo entre la música, el entretenimiento y la cultura contemporánea, desde una perspectiva periodística que conecta con diferentes públicos. Además de su labor como reportera, desarrolla una faceta vinculada con la música como DJ, ampliando su participación en la escena musical. Su perfil reúne comunicación y expresión artística, dos ámbitos desde los cuales se aproxima a la cultura musical.</p>
                         </div>
                         <div class="bio-social-links">
-                            <a href="https://www.instagram.com/fabhinojossa?xtok=N3dvMGU1bHl1cWQ4" target="_blank" class="hover-target">
+                            <a href="https://www.instagram.com/fabhinojossa?xtok=N3dvMGU1bHl1cWQ4" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                                 <span>@fabhinojosa</span>
                             </a>
-                            <a href="https://www.tiktok.com/@shesleavinghome_" target="_blank" class="hover-target">
+                            <a href="https://www.tiktok.com/@shesleavinghome_" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
                                 <span>@shesleavinghome_</span>
                             </a>
@@ -480,9 +492,7 @@
                     </div>
                 </div>
                 <div class="tiktok-gallery">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@shesleavinghome_" data-unique-id="shesleavinghome_" data-embed-type="creator" data-theme="dark" style="max-width: 780px; min-width: 288px;">
-                        <section> <a target="_blank" href="https://www.tiktok.com/@shesleavinghome_?refer=creator_embed">@shesleavinghome_</a> </section> 
-                    </blockquote>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@shesleavinghome_" data-unique-id="shesleavinghome_" data-embed-type="creator" style="max-width: 780px; min-width: 288px;"><section></section></blockquote>
                 </div>
             </div>
         </section>
@@ -498,11 +508,11 @@
                             <p>Carlos Rodríguez, tatuador originario de San Nicolás de los Garza, Nuevo León, es un artista cuya práctica se extiende hacia la experimentación sonora y la electrónica. Su acercamiento al noise lo llevó a explorar las posibilidades expresivas del sonido, abriendo un camino creativo que conecta el arte, la tecnología y la experimentación musical. Actualmente, desarrolla un proyecto colaborativo junto a doce músicos de distintas partes del mundo, construyendo una propuesta que trasciende fronteras geográficas a través de la exploración sonora. Además de su trabajo artístico, comparte contenido educativo sobre electrónica, acercando conocimientos y herramientas a quienes desean descubrir nuevas formas de crear, experimentar y relacionarse con la tecnología.</p>
                         </div>
                         <div class="bio-social-links">
-                            <a href="https://www.instagram.com/ominoussound" target="_blank" class="hover-target">
+                            <a href="https://www.instagram.com/ominoussound" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                                 <span>@ominoussound</span>
                             </a>
-                            <a href="https://www.tiktok.com/@ominoussound?is_from_webapp=1&sender_device=pc" target="_blank" class="hover-target">
+                            <a href="https://www.tiktok.com/@ominoussound?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="hover-target">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.07 4.41-2.75 5.92-1.71 1.54-4.08 2.39-6.4 2.11-2.62-.31-5.07-1.92-6.28-4.27-1.15-2.22-1.18-4.97-.08-7.23 1.05-2.18 3.12-3.8 5.48-4.25 1.11-.2 2.25-.2 3.36-.07v4.11c-.56-.05-1.13-.03-1.69.07-.98.18-1.89.76-2.45 1.56-.56.8-.75 1.83-.56 2.8.19.98.76 1.89 1.56 2.45.8.56 1.83.75 2.8.56.98-.19 1.89-.76 2.45-1.56.56-.8.75-1.83.56-2.8V.02z"/></svg>
                                 <span>@ominoussound</span>
                             </a>
@@ -513,9 +523,7 @@
                     </div>
                 </div>
                 <div class="tiktok-gallery">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ominoussound" data-unique-id="ominoussound" data-embed-type="creator" data-theme="dark" style="max-width: 780px; min-width: 288px;">
-                        <section> <a target="_blank" href="https://www.tiktok.com/@ominoussound?refer=creator_embed">@ominoussound</a> </section> 
-                    </blockquote>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ominoussound" data-unique-id="ominoussound" data-embed-type="creator" style="max-width: 780px; min-width: 288px;"><section></section></blockquote>
                 </div>
             </div>
         </section>
@@ -528,13 +536,11 @@
                     <h2 class="unete-title">UNETÉ A LA<br>MADRIGUERA</h2>
                 </div>
                 <div class="unete-grid">
-                    <!-- Mitad Izquierda: Colaborador -->
                     <div class="unete-card">
                         <h3 class="unete-subtitle">COLABORADOR</h3>
                         <p class="unete-text">Si tienes un proyecto relacionado con algunos de nuestros segmentos o quieres ofrecer un taller gratuito para la comunidad.</p>
                         <a href="#form-colaborador" class="btn-unete hover-target">Ir</a>
                     </div>
-                    <!-- Mitad Derecha: Marca -->
                     <div class="unete-card">
                         <h3 class="unete-subtitle">MARCA</h3>
                         <p class="unete-text">Si eres una marca consolidada y deseas contarnos tu propuesta para ayudar al crecimiento de la comunidad.</p>
@@ -543,7 +549,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- SECCIÓN 17: FORMULARIO COLABORADOR -->
         <section id="form-colaborador" class="section-formulario">
@@ -554,7 +559,7 @@
                         <h2 class="form-title">CUENTANOS<br>SOBRE TI</h2>
                     </div>
                     <div class="form-content">
-                        <form class="custom-form">
+                        <form id="colab-form" class="custom-form">
                             <input type="text" placeholder="Nombre:" required class="hover-target">
                             <textarea placeholder="Cuentanos tu proyecto:" rows="3" required class="hover-target"></textarea>
                             <input type="url" placeholder="Enlaces:" class="hover-target">
@@ -573,7 +578,7 @@
             <div class="content-wrapper form-wrapper">
                 <div class="form-grid">
                     <div class="form-content">
-                        <form class="custom-form">
+                        <form id="marca-form" class="custom-form">
                             <input type="text" placeholder="Nombre de la empresa o marca:" required class="hover-target">
                             <textarea placeholder="Propuesta de colaboración:" rows="3" required class="hover-target"></textarea>
                             <input type="url" placeholder="Sitio Web:" class="hover-target">
@@ -591,10 +596,28 @@
 
     </main>
 
-    <!-- Script de TikTok unificado al final para cargar los tres videos de forma óptima -->
+    <!-- Reproductor de Audio SoundCloud (Oculto para Widget API) -->
+    <div id="sc-player-container" class="sc-hidden-container">
+        <!-- Es MUY importante el id="sc-widget" para la API -->
+        <iframe id="sc-widget" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2325586401&color=%23212121&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/neith-332082299" title="Annie" target="_blank" style="color: #cccccc; text-decoration: none;">Annie</a> · <a href="https://soundcloud.com/neith-332082299/sets/marrr" title="Marrr" target="_blank" style="color: #cccccc; text-decoration: none;">Marrr</a>
+        </div>
+    </div>
+
+    <!-- Botón de Audio Flotante -->
+    <button id="audio-toggle-btn" class="hover-target" aria-label="Reproducir música">
+        <!-- SVG Speaker OFF (Muted) -->
+        <svg id="icon-speaker-off" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+        </svg>
+        <!-- SVG Speaker ON (Playing) -->
+        <svg id="icon-speaker-on" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+        </svg>
+    </button>
+
     <script async src="https://www.tiktok.com/embed.js"></script>
-    
-    <!-- Script Custom -->
     <script src="script.js"></script>
 </body>
 </html>
